@@ -72,6 +72,7 @@ nav {
     /* Cor do texto dos itens do dropdown quando passa o mouse */
 }
 
+
 /*--------------------------------------------------------------------------------------------*/
 /* PÁGINA SOBRE */
 
@@ -141,7 +142,7 @@ span {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #06a0f9;
+    background-color: #06f957;
     border-radius: 45%;
     width: 25px;
     height: 25px;
@@ -152,7 +153,7 @@ span {
 footer {
     margin-top: 15%;
     width: 100%;
-    background: #06a0f9;
+    background: rgb(17, 179, 89);
     height: 130px;
     display: flex;
     justify-content: center;
