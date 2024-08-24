@@ -1,13 +1,28 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 /* CABECALHO */
 .cabecalho{
-    margin-bottom: 200px;
+    margin-bottom: 5%;
 }
-
 .cor_fonte {
     color: black;
     font-weight: bold;
@@ -33,51 +48,11 @@ nav {
     border-bottom: 1px solid rgb(210, 211, 211);
 }
 
-/* Estilizando o link do dropdown */
-.nav-item.dropdown .nav-link {
-    color: black
-        /* Cor do texto */
-}
-
-/* Estilizando o link do dropdown quando o mouse passa por cima */
-.nav-item.dropdown .nav-link:hover {
-    color:rgb(17, 179, 89);
-    /* Cor do texto quando passa o mouse */
-}
-
-/* Estilizando o link do dropdown quando está aberto */
-.nav-item.dropdown .nav-link:focus,
-.nav-item.dropdown .nav-link:active {
-    color: rgb(17, 179, 89);
-    /* Cor do texto quando está aberto */
-}
-
-/* Estilizando o fundo do dropdown */
-.nav-item.dropdown .dropdown-menu {
-    background-color: white;
-    /* Cor de fundo do dropdown */
-}
-
-/* Estilizando os itens do dropdown */
-.nav-item.dropdown .dropdown-item {
-    color: black;
-    /* Cor do texto dos itens do dropdown */
-}
-
-/* Estilizando os itens do dropdown quando o mouse passa por cima */
-.nav-item.dropdown .dropdown-item:hover {
-    background-color: #F1F5F2;
-    /* Cor de fundo dos itens do dropdown quando passa o mouse */
-    color: rgb(30, 98, 224);
-    /* Cor do texto dos itens do dropdown quando passa o mouse */
-}
-
-
 /*--------------------------------------------------------------------------------------------*/
 /* PÁGINA SOBRE */
 
 .sobre img {
-    height: 230px;
+    height: 430px;
 }
 
 .hist {
@@ -91,13 +66,12 @@ span {
 
 .sobre .title {
     border-bottom: 2px solid #c3c3c3;
-    margin-top: 15%;
 }
 
 /*--------------------------------------------------------------------------------------------*/
 /* SEÇÃO DE IMAGENS */
 
-.columns{
+.columns {
     margin-top: 5%;
 }
 
@@ -122,30 +96,6 @@ span {
 
 .confira {
     font-size: 26px;
-}
-
-/*-----------------------------------------------------------------------------------------*/
-/* SEÇÃO DO CARROSSEL */
-.carrossel {
-    margin-top: 7%;
-    padding: 25px;
-}
-
-.carousel-item {
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item img {
-    height: 300px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #06f957;
-    border-radius: 45%;
-    width: 25px;
-    height: 25px;
 }
 
 /*-----------------------------------------------------------------------------------------*/
@@ -211,7 +161,9 @@ footer p {
 
 /*-----------------------------------------------------------------------------------------*/
 /* CONTATO*/
-input[type=text], input[type=email], textarea{
+input[type=text],
+input[type=email],
+textarea {
     width: 100%;
     padding: 12px 0;
     outline: none;
@@ -219,10 +171,11 @@ input[type=text], input[type=email], textarea{
     margin-top: 6px;
     margin-bottom: 16px;
     resize: none;
-    border: 2px solid #1AA7E7;
+    border: 2px solid #25913c;
 }
 
-input[type=text]:focus, input[type=text]:active{
+input[type=text]:focus,
+input[type=text]:active {
     background: transparent;
 }
 
@@ -234,39 +187,42 @@ input[type=text]:focus, input[type=text]:active{
     height: 650px;
 }
 
-.forms{
+.forms {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 2px solid #1AA7E7;
+    border: 2px solid #25913c;
     padding: 3%;
     width: 50%;
     height: 100%;
 }
 
-.forms input, textarea{
+.forms input,
+textarea {
     border-radius: 20px;
     padding: 10px;
 }
 
-.info{
+.info {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 50%;
     height: 100%;
-    background-color:#1AA7E7;
+    background-color: #25913c;
     padding: 4%;
-    
+
 }
 
-.info .header{
+.info .header {
     height: 20%;
     width: 100%;
     color: white;
 }
-.info .body{
+
+.info .body {
     height: 70px;
     width: 100%;
 }
+
 .info img {
     width: 30px;
     height: 30px;
@@ -278,41 +234,44 @@ input[type=text]:focus, input[type=text]:active{
     background-color: transparent;
     color: #ffff;
     font-size: 16px;
-    border: 1px solid#1AA7E7;
+    border: 1px solid#25913c;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.ctt-btn button:hover{
+.ctt-btn button:hover {
     background-color: red;
     color: black;
 }
-.ul-ctt{
+
+.ul-ctt {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.ul-ctt li{
+
+.ul-ctt li {
     margin: 4% 0;
 }
 
-.ctt-span , .ctt-icon{
+.ctt-span,
+.ctt-icon {
     color: white;
 }
 
-.list a:hover{
+.list a:hover {
     color: white;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: row;
     font-size: 22px;
     align-items: center;
 }
 
-.list img{
+.list img {
     margin-right: 5%;
     background-color: transparent;
     padding: 1%;
@@ -320,30 +279,31 @@ input[type=text]:focus, input[type=text]:active{
     border: 1px solid black;
 }
 
-.ctt{
+.ctt {
     justify-content: center;
     align-items: center;
 }
 
 .limpar {
-    background-color: red ;
-    border-radius: 10px;
-    color: black;
-}
-.Enviar{
-    background-color: greenyellow ;
+    background-color: red;
     border-radius: 10px;
     color: black;
 }
 
-.msg{
+.Enviar {
+    background-color: greenyellow;
+    border-radius: 10px;
     color: black;
 }
 
-.text{
+.msg {
+    color: black;
+}
+
+.text {
     margin-left: 10px;
 }
 
-.btn{
+.btn {
     margin-top: 25px;
 }
