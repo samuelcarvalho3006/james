@@ -99,12 +99,11 @@ footer {
     margin-top: 4%;
     width: 100%;
     background: rgb(17, 179, 89);
-    height: 130px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 12px;
 }
 
 footer .social_icon,
@@ -122,7 +121,7 @@ footer .social_icon li,
 }
 
 footer .social_icon li a {
-    font-size: 2em;
+    font-size: 22px;
     color: #ffffff;
     margin: 0 10px;
     display: inline-block;
@@ -134,18 +133,12 @@ footer .social_icon li a:hover {
 
 }
 
-footer .menu li a {
+footer li a {
     font-size: 1.2em;
     color: #ffffff;
-    margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
-    opacity: 0.75;
-}
-
-footer .menu li a:hover {
-    opacity: 1;
 }
 
 footer p {
